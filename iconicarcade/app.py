@@ -5,7 +5,7 @@ import os
 app = Flask(__name__, static_url_path='/static', static_folder='static')
 app.secret_key = os.urandom(24)  # Replace with a random key
 
-UPLOAD_FOLDER = '/tmp/userdata/roms'
+UPLOAD_FOLDER = '/userdata/roms'
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 64 * 1024 * 1024  # 64MB max file size
