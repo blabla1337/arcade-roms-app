@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Get ready to relive the golden age of gaming with our ultimate customizable home arcade. Bring home the arcade classics and create your own gaming paradise!">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
+    <meta name="apple-mobile-web-app-title" content="RaidPal">
+    <meta name="application-name" content="RaidPal">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
+    <link rel="manifest" href="/static/img/site.webmanifest">
+    <link rel="mask-icon" href="/static/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- open graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Iconic Arcade gaming ROM Uploader" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https-iconicarcade-com-en-iconic-arcade-gaming" />
+    <meta property="og:description"
+        content="Get ready to relive the golden age of gaming with our ultimate customizable home arcade. Bring home the arcade classics and create your own gaming paradise!" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/static/css/mod.styles.css" type="text/css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <title>Iconic Arcade gaming ROM uploader</title>
+</head>
+
+<body>
+
+
+    <!-- chapter image -->
+    <section>
+        <div class="container-fluid no-padding">
+            <div class="row">
+                <img src="/static/img/ia_chapter_ia_logo_2160-min.jpg" width="2160"
+                    alt="endless gaming entertainment" />
+            </div>
+        </div>
+    </section>
+    <section class="section bg-5 animatedParent">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 vertical-center">
+                    {% if msg is defined %}
+                    <h2 style="color: #7e0e4f;"> {{msg}} </h2>
+                    <br><br>
+                    {% endif %}
+                    <div class="mod_wysiwyg_wrapper" id="mod_wysiwyg_cid-454">
+                        
+
+                        <p><img style="display: block; margin-left: auto; margin-right: auto;"
+                                src="https://iconicarcade.com/media/files/icons/Union.png" alt="union" width="38"
+                                height="38"></p>
+                        <h2 style="text-align: center;">Select console and upload your ROMS</h2>
+                        <h3 style="text-align: center;">Below you can find all the consoles supported by Batocera. Select the console you own ROMS for and use the form to upload them to your console.</h3>
+                        <div class="accordion-container">
+                            <ul class="accordion">
+                              <!-- CONSOLES-->  
+                                
+                              <ul class="accordion">
+                                <li class="slide">
+                                  <div class="slide-number"><h2>3do</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/3do/3do_preview.png" alt="3do Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-3do" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-3do" style="display: none;">
+                                      <input type="hidden" name="console" value="3do">
+                                      <button class="btn btn1" type="submit" id="submit-3do" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Amiga1200</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/amiga1200/a1200_preview.jpg" alt="Amiga1200 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-amiga1200" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-amiga1200" style="display: none;">
+                                      <input type="hidden" name="console" value="amiga1200">
+                                      <button class="btn btn1" type="submit" id="submit-amiga1200" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Amiga600</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/amiga600/a600_preview.jpg" alt="Amiga600 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-amiga600" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-amiga600" style="display: none;">
+                                      <input type="hidden" name="console" value="amiga600">
+                                      <button class="btn btn1" type="submit" id="submit-amiga600" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Amstradcpc</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/amstradcpc/logo.svg" alt="Amstradcpc Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-amstradcpc" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-amstradcpc" style="display: none;">
+                                      <input type="hidden" name="console" value="amstradcpc">
+                                      <button class="btn btn1" type="submit" id="submit-amstradcpc" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Apple2</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/apple2/apple2_preview.png" alt="Apple2 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-apple2" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-apple2" style="display: none;">
+                                      <input type="hidden" name="console" value="apple2">
+                                      <button class="btn btn1" type="submit" id="submit-apple2" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Atari2600</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/atari2600/atari2600_preview.png" alt="Atari2600 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-atari2600" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-atari2600" style="display: none;">
+                                      <input type="hidden" name="console" value="atari2600">
+                                      <button class="btn btn1" type="submit" id="submit-atari2600" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Atari7800</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/atari7800/atari7800_preview.png" alt="Atari7800 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-atari7800" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-atari7800" style="display: none;">
+                                      <input type="hidden" name="console" value="atari7800">
+                                      <button class="btn btn1" type="submit" id="submit-atari7800" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Atarist</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/atarist/atari_ste_preview.png" alt="Atarist Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-atarist" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-atarist" style="display: none;">
+                                      <input type="hidden" name="console" value="atarist">
+                                      <button class="btn btn1" type="submit" id="submit-atarist" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>C64</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/c64/commodore64_preview.png" alt="C64 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-c64" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-c64" style="display: none;">
+                                      <input type="hidden" name="console" value="c64">
+                                      <button class="btn btn1" type="submit" id="submit-c64" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Cavestory</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/cavestory/cavestory-elements_Preview.png" alt="Cavestory Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-cavestory" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-cavestory" style="display: none;">
+                                      <input type="hidden" name="console" value="cavestory">
+                                      <button class="btn btn1" type="submit" id="submit-cavestory" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Colecovision</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/colecovision/colecovision_preview.png" alt="Colecovision Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-colecovision" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-colecovision" style="display: none;">
+                                      <input type="hidden" name="console" value="colecovision">
+                                      <button class="btn btn1" type="submit" id="submit-colecovision" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Dreamcast</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/dreamcast/Dreamcast_preview.png" alt="Dreamcast Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-dreamcast" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-dreamcast" style="display: none;">
+                                      <input type="hidden" name="console" value="dreamcast">
+                                      <button class="btn btn1" type="submit" id="submit-dreamcast" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Favorites</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/favorites/favorites-elements_preview.png" alt="Favorites Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-favorites" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-favorites" style="display: none;">
+                                      <input type="hidden" name="console" value="favorites">
+                                      <button class="btn btn1" type="submit" id="submit-favorites" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Fba</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/fba/console2_preview.png" alt="Fba Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-fba" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-fba" style="display: none;">
+                                      <input type="hidden" name="console" value="fba">
+                                      <button class="btn btn1" type="submit" id="submit-fba" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Fba_libretro</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/fba_libretro/console2_preview.png" alt="Fba_libretro Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-fba_libretro" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-fba_libretro" style="display: none;">
+                                      <input type="hidden" name="console" value="fba_libretro">
+                                      <button class="btn btn1" type="submit" id="submit-fba_libretro" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Fds</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/fds/fds_elements_preview.png" alt="Fds Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-fds" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-fds" style="display: none;">
+                                      <input type="hidden" name="console" value="fds">
+                                      <button class="btn btn1" type="submit" id="submit-fds" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Gamegear</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/gamegear/GameGear_preview.jpg" alt="Gamegear Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-gamegear" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-gamegear" style="display: none;">
+                                      <input type="hidden" name="console" value="gamegear">
+                                      <button class="btn btn1" type="submit" id="submit-gamegear" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Gb</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/gb/Gameboy_preview.jpg" alt="Gb Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-gb" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-gb" style="display: none;">
+                                      <input type="hidden" name="console" value="gb">
+                                      <button class="btn btn1" type="submit" id="submit-gb" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Gba</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/gba/gba_preview.png" alt="Gba Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-gba" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-gba" style="display: none;">
+                                      <input type="hidden" name="console" value="gba">
+                                      <button class="btn btn1" type="submit" id="submit-gba" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Gbc</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/gbc/GameBoyColor_Preview.jpg" alt="Gbc Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-gbc" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-gbc" style="display: none;">
+                                      <input type="hidden" name="console" value="gbc">
+                                      <button class="btn btn1" type="submit" id="submit-gbc" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Gc</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/gc/gc_preview.png" alt="Gc Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-gc" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-gc" style="display: none;">
+                                      <input type="hidden" name="console" value="gc">
+                                      <button class="btn btn1" type="submit" id="submit-gc" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Gw</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/gw/Game-.-Watch_preview.png" alt="Gw Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-gw" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-gw" style="display: none;">
+                                      <input type="hidden" name="console" value="gw">
+                                      <button class="btn btn1" type="submit" id="submit-gw" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Imageviewer</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/imageviewer/imageviewer-elements_preview.png" alt="Imageviewer Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-imageviewer" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-imageviewer" style="display: none;">
+                                      <input type="hidden" name="console" value="imageviewer">
+                                      <button class="btn btn1" type="submit" id="submit-imageviewer" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Lutro</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/lutro/lutro-elements_Preview.png" alt="Lutro Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-lutro" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-lutro" style="display: none;">
+                                      <input type="hidden" name="console" value="lutro">
+                                      <button class="btn btn1" type="submit" id="submit-lutro" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Lynx</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/lynx/lynx-pack_Preview.jpg" alt="Lynx Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-lynx" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-lynx" style="display: none;">
+                                      <input type="hidden" name="console" value="lynx">
+                                      <button class="btn btn1" type="submit" id="submit-lynx" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Mame</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/mame/console2_preview.png" alt="Mame Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-mame" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-mame" style="display: none;">
+                                      <input type="hidden" name="console" value="mame">
+                                      <button class="btn btn1" type="submit" id="submit-mame" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Mastersystem</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/mastersystem/Sega-Master-system-element.png" alt="Mastersystem Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-mastersystem" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-mastersystem" style="display: none;">
+                                      <input type="hidden" name="console" value="mastersystem">
+                                      <button class="btn btn1" type="submit" id="submit-mastersystem" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Megadrive</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/megadrive/megadrive_preview.png" alt="Megadrive Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-megadrive" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-megadrive" style="display: none;">
+                                      <input type="hidden" name="console" value="megadrive">
+                                      <button class="btn btn1" type="submit" id="submit-megadrive" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Moonlight</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/moonlight/moonlight-elements_preview.png" alt="Moonlight Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-moonlight" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-moonlight" style="display: none;">
+                                      <input type="hidden" name="console" value="moonlight">
+                                      <button class="btn btn1" type="submit" id="submit-moonlight" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Msx</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/msx/msx_preview.png" alt="Msx Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-msx" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-msx" style="display: none;">
+                                      <input type="hidden" name="console" value="msx">
+                                      <button class="btn btn1" type="submit" id="submit-msx" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Msx1</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/msx1/msx1_preview.png" alt="Msx1 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-msx1" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-msx1" style="display: none;">
+                                      <input type="hidden" name="console" value="msx1">
+                                      <button class="btn btn1" type="submit" id="submit-msx1" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Msx2</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/msx2/msx2_preview.png" alt="Msx2 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-msx2" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-msx2" style="display: none;">
+                                      <input type="hidden" name="console" value="msx2">
+                                      <button class="btn btn1" type="submit" id="submit-msx2" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>N64</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/n64/N64_preview.png" alt="N64 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-n64" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-n64" style="display: none;">
+                                      <input type="hidden" name="console" value="n64">
+                                      <button class="btn btn1" type="submit" id="submit-n64" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Neogeo</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/neogeo/NeoGeo_Preview.png" alt="Neogeo Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-neogeo" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-neogeo" style="display: none;">
+                                      <input type="hidden" name="console" value="neogeo">
+                                      <button class="btn btn1" type="submit" id="submit-neogeo" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Nes</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/nes/Nes_Preview.jpg" alt="Nes Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-nes" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-nes" style="display: none;">
+                                      <input type="hidden" name="console" value="nes">
+                                      <button class="btn btn1" type="submit" id="submit-nes" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Ngp</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/ngp/Neogeo-Pocket.png" alt="Ngp Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-ngp" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-ngp" style="display: none;">
+                                      <input type="hidden" name="console" value="ngp">
+                                      <button class="btn btn1" type="submit" id="submit-ngp" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Ngpc</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/ngpc/Neogeo-Pocket-Color_preview.png" alt="Ngpc Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-ngpc" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-ngpc" style="display: none;">
+                                      <input type="hidden" name="console" value="ngpc">
+                                      <button class="btn btn1" type="submit" id="submit-ngpc" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Odyssey2</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/odyssey2/odyssey2_elements_Preview.png" alt="Odyssey2 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-odyssey2" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-odyssey2" style="display: none;">
+                                      <input type="hidden" name="console" value="odyssey2">
+                                      <button class="btn btn1" type="submit" id="submit-odyssey2" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Pc</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/pc/PC_preview.jpg" alt="Pc Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-pc" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-pc" style="display: none;">
+                                      <input type="hidden" name="console" value="pc">
+                                      <button class="btn btn1" type="submit" id="submit-pc" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Pcengine</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/pcengine/pcengine-pack_preview.jpg" alt="Pcengine Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-pcengine" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-pcengine" style="display: none;">
+                                      <input type="hidden" name="console" value="pcengine">
+                                      <button class="btn btn1" type="submit" id="submit-pcengine" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Pcenginecd</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/pcenginecd/pcengineCD-pack_preview.jpg" alt="Pcenginecd Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-pcenginecd" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-pcenginecd" style="display: none;">
+                                      <input type="hidden" name="console" value="pcenginecd">
+                                      <button class="btn btn1" type="submit" id="submit-pcenginecd" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Prboom</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/prboom/prboom-doom-pack_Preview.png" alt="Prboom Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-prboom" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-prboom" style="display: none;">
+                                      <input type="hidden" name="console" value="prboom">
+                                      <button class="btn btn1" type="submit" id="submit-prboom" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Psp</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/psp/psp_preview.png" alt="Psp Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-psp" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-psp" style="display: none;">
+                                      <input type="hidden" name="console" value="psp">
+                                      <button class="btn btn1" type="submit" id="submit-psp" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Psx</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/psx/PS1_preview.jpg" alt="Psx Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-psx" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-psx" style="display: none;">
+                                      <input type="hidden" name="console" value="psx">
+                                      <button class="btn btn1" type="submit" id="submit-psx" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Scummvm</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/scummvm/ScummVM_preview.png" alt="Scummvm Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-scummvm" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-scummvm" style="display: none;">
+                                      <input type="hidden" name="console" value="scummvm">
+                                      <button class="btn btn1" type="submit" id="submit-scummvm" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Sega32x</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/sega32x/Sega32X_preview.png" alt="Sega32x Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-sega32x" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-sega32x" style="display: none;">
+                                      <input type="hidden" name="console" value="sega32x">
+                                      <button class="btn btn1" type="submit" id="submit-sega32x" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Segacd</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/segacd/megaCD_preview.png" alt="Segacd Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-segacd" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-segacd" style="display: none;">
+                                      <input type="hidden" name="console" value="segacd">
+                                      <button class="btn btn1" type="submit" id="submit-segacd" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Sg1000</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/sg1000/SG1000_preview.png" alt="Sg1000 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-sg1000" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-sg1000" style="display: none;">
+                                      <input type="hidden" name="console" value="sg1000">
+                                      <button class="btn btn1" type="submit" id="submit-sg1000" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Smw</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/smw/smw-elements_Preview.png" alt="Smw Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-smw" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-smw" style="display: none;">
+                                      <input type="hidden" name="console" value="smw">
+                                      <button class="btn btn1" type="submit" id="submit-smw" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Snes</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/snes/snes_elements.png" alt="Snes Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-snes" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-snes" style="display: none;">
+                                      <input type="hidden" name="console" value="snes">
+                                      <button class="btn btn1" type="submit" id="submit-snes" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Supergrafx</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/supergrafx/supergrafx-pack_Preview.jpg" alt="Supergrafx Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-supergrafx" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-supergrafx" style="display: none;">
+                                      <input type="hidden" name="console" value="supergrafx">
+                                      <button class="btn btn1" type="submit" id="submit-supergrafx" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Vectrex</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/vectrex/Vectrex_preview.jpg" alt="Vectrex Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-vectrex" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-vectrex" style="display: none;">
+                                      <input type="hidden" name="console" value="vectrex">
+                                      <button class="btn btn1" type="submit" id="submit-vectrex" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Virtualboy</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/virtualboy/console-virtualboy.svg" alt="Virtualboy Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-virtualboy" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-virtualboy" style="display: none;">
+                                      <input type="hidden" name="console" value="virtualboy">
+                                      <button class="btn btn1" type="submit" id="submit-virtualboy" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Wii</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/wii/wii_preview.png" alt="Wii Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-wii" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-wii" style="display: none;">
+                                      <input type="hidden" name="console" value="wii">
+                                      <button class="btn btn1" type="submit" id="submit-wii" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Wonderswan</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/wonderswan/Wonderswan_preview.png" alt="Wonderswan Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-wonderswan" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-wonderswan" style="display: none;">
+                                      <input type="hidden" name="console" value="wonderswan">
+                                      <button class="btn btn1" type="submit" id="submit-wonderswan" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Wonderswancolor</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/wonderswancolor/Wonderswan_color_preview.png" alt="Wonderswancolor Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-wonderswancolor" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-wonderswancolor" style="display: none;">
+                                      <input type="hidden" name="console" value="wonderswancolor">
+                                      <button class="btn btn1" type="submit" id="submit-wonderswancolor" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Zx81</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/zx81/zx81.jpg" alt="Zx81 Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-zx81" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-zx81" style="display: none;">
+                                      <input type="hidden" name="console" value="zx81">
+                                      <button class="btn btn1" type="submit" id="submit-zx81" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                
+                                <li class="slide">
+                                  <div class="slide-number"><h2>Zxspectrum</h2></div>
+                                  <div class="slide-content">
+                                    <img width="300px" height="300px" src="/static/img/roms/zxspectrum/zx_spectrum.jpg" alt="Zxspectrum Preview">
+                                    <br><br>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                      <label for="file-upload-zxspectrum" class="btn btn1 custom-file-upload" style="float:left;">
+                                        Select File
+                                      </label>
+                                      <input type="file" name="file" id="file-upload-zxspectrum" style="display: none;">
+                                      <input type="hidden" name="console" value="zxspectrum">
+                                      <button class="btn btn1" type="submit" id="submit-zxspectrum" name="submit" style="float:right;">Upload Rom</button>
+                                    </form>                                  
+                                  </div>
+                                </li>
+                                </ul>
+           
+                              <!-- END CONSOLES -->
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div><!-- footer -->
+    <footer class="footer">
+        <!-- branding -->
+        <div class="bot animatedParent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-md-12 col-sm-12 animated growIn slower">
+
+                        <div class="mod_wysiwyg_wrapper" id="mod_wysiwyg_cid-5">
+                            <p style="text-align: center;"><img
+                                    style="max-width: 420px; display: block; margin-left: auto; margin-right: auto;"
+                                    src="https://iconicarcade.com/media/files/icons/LOGO_SIMPLE_WIDE.png"
+                                    alt="iconic arcade logo" width="235" height="26" /></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- glowed line -->
+        <div class="glow-line"></div>
+        <!-- footnote -->
+        <div class="note">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 col-sm-12 note-col_1">
+                        <div class="copy">© 2024 All Rights Reserved | <a href="https://iconicarcade.com">Iconic
+                                Arcade</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- up -->
+    <div class="up">
+        <div class="fa fa-angle-up"></div>
+    </div>
+
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    <!-- jquery scripts -->
+    <script src="/static/js/jquery.form.validate.min.js"></script>
+    <script src="/static/js/jquery.colorbox.min.js"></script>
+    <script src="/static/js/jquery.datetimepicker.min.js"></script>
+    <script src="/static/js/jquery.lazy.min.js"></script>
+    <!-- custom scripts -->
+    <script src="/static/js/scripts.min.js"></script>
+    <script src="/static/js/css3-animate-it.min.js"></script>
+</body>
+
+</html>
