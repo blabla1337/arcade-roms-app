@@ -12,7 +12,7 @@ ssh root@batocera.local <<'ENDSSH'
     pip3 install flask
 
     # Download the arcade-roms-app repository and run the app
-    wget https://codeload.github.com/blabla1337/arcade-roms-app/zip/refs/heads/main -O arcade-roms-app.zip
+    wget https://github.com/blabla1337/arcade-roms-app/archive/refs/heads/main.zip -O arcade-roms-app.zip
     unzip arcade-roms-app.zip
     cd arcade-roms-app-main/iconicarcade
     python3 app.py
