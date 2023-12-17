@@ -33,7 +33,7 @@ def upload_file():
         console_value = request.form['console']
         file.save(os.path.join(app.config['UPLOAD_FOLDER']+"/"+console_value, filename))
         # Kill EmulationStation to force reload games
-        os.system("sudo killall emulationstation")
+        os.system("killall emulationstation")
         return render_template('index.html', msg=msg)
     
 if __name__ == '__main__':

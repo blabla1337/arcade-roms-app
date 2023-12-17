@@ -11,6 +11,10 @@ ssh root@batocera.local <<'ENDSSH'
     # Install Flask
     pip3 install flask
 
+    # remove old instance if exits
+    rm -rf arcade-roms-app-main/
+    rm arcade-roms-app.zip
+
     # Download the arcade-roms-app repository and run the app
     wget https://github.com/blabla1337/arcade-roms-app/archive/refs/heads/main.zip -O arcade-roms-app.zip
     unzip arcade-roms-app.zip
